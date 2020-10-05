@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "405097208272",
+    "firebase_url": "https://planete-de2c6.firebaseio.com",
+    "project_id": "planete-de2c6",
+    "storage_bucket": "planete-de2c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405097208272:android:4e4ef23e8133b9fc3501d5",
+        "android_client_info": {
+          "package_name": "com.example.flutter_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "405097208272-quv6k9gauel0q0qmq2qln4obc3g1cinv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgdcOhqgCvNz8BVhB90DKDpUizu2S0OoQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "405097208272-quv6k9gauel0q0qmq2qln4obc3g1cinv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "405097208272-gv78hbcemctncf3pa31utc96o68thdu6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
