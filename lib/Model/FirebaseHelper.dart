@@ -27,7 +27,7 @@ class FirebaseHelper {
   //Database
 
 static final base = FirebaseDatabase.instance.reference();
-  final base_user = base.child("users");
+  final base_user = base.child("user");
 
   addUser(String uid, Map map){
     base_user.child(uid).set(map);

@@ -5,13 +5,12 @@ import 'Controller/MainAppController.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-
-void main()  async {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-
   runApp(MyApp());
 }
+
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
@@ -28,9 +27,9 @@ class MyApp extends StatelessWidget {
   }
 
   Widget _handleAuth() {
-      return new StreamBuilder <FirebaseUser>(
+    return new StreamBuilder <User>(
+          stream: FirebaseAuth.instance.authStateChanges(),
         // Initialize FlutterFire
-          stream: FirebaseAuth.instance.onAuthStateChanged,
           builder: (BuildContext context, snapshot) {
             if (snapshot.hasData) {
               //On est Auth
@@ -39,8 +38,7 @@ class MyApp extends StatelessWidget {
               //On est pas Auth
               return new LoginController();
             }
-          });
-
-
+          }
+          );
     }
   }

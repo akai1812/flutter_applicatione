@@ -58,7 +58,7 @@ if(_mail != null){
   if (_passwords != null){
     if (_log == true){
       // Se connecter
-      FirebaseHelper().handleSignIn(_mail, _passwords).then((FirebaseUser user){
+      FirebaseHelper().handleSignIn(_mail, _passwords).then((User){
         print("Nous avons un user");
       }).catchError((error){
         alerte(error.toString());
@@ -69,7 +69,7 @@ if(_mail != null){
       if (_prenom != null){
         if (_nom != null){
           //Créer un compte avec les données de l'utilisateur
-          FirebaseHelper().handleCreate(_mail, _passwords, _prenom, _nom).then((FirebaseUser user){
+          FirebaseHelper().handleCreate(_mail, _passwords, _prenom, _nom).then((User){
   print("Nous avons pu créer un utilisateur");
   }).catchError((error){
     alerte(error.toString());
